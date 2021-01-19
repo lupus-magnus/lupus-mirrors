@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+// import { motion } from 'framer-motion';
+// import Remote from './components/remote'
+import Home from './components/Home'
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import Facebook from './components/Facebook';
+import Instagram from './components/Instagram';
+import Netflix from './components/Netflix';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+    
+    render() { 
+        return (
+            <Router>
+                {/* <Remote /> */}
+                <Switch>
+                    <Route exact path='/' component={Home} />
+                    <Route path='/facebook' component={Facebook} />
+                    <Route path='/instagram' component={Instagram} />
+                    <Route path='/netflix' component={Netflix} />
+                    
+                </Switch>    
+                
+            </Router>
+            
+        )
+        
+    }
 }
-
+ 
 export default App;
