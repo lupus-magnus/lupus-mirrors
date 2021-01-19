@@ -12,7 +12,7 @@ class Remote extends Component {
         return ( 
             <motion.div className={styles.remoteControl} animate={{opacity: 1}} initial={{opacity: 0}} transition={{delay: 2, duration: 3}}>
                 <div className={styles.remoteContainer}>
-                    <img className={styles.mirrorpng} src={mirrorImage} alt='mirror.png' />
+                <Link to='/'><img className={styles.mirrorpng} src={mirrorImage} alt='mirror.png' /> </Link>
                     <div className={styles.options}>
                         <Link to='/facebook'>
                             <img className={styles.socialLinks} src={facebook} alt='social media link' />

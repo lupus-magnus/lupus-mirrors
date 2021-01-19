@@ -11,7 +11,7 @@ class Home extends Component {
         <div className={style.main}>
             
             <div className={style.imgContainer}>
-                
+                <Remote />
                 <motion.img className={style.illustration} alt='illustration' src={illustration}
                     animate={{x:0}}
                     initial={{x:'200vw'}}
@@ -29,7 +29,7 @@ class Home extends Component {
                     initial={{opacity:0}}
                     transition={{ease: 'easeIn', duration:0.8, delay: 1.3}}>Made by @LupusMagnus.
                 </motion.p>
-                <Remote />
+                
             </div>
             
             
