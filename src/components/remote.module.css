@@ -16,8 +16,8 @@
   padding: 3px;
   margin-left: 20px;
   align-items: center;
-  height: 100%;
-  width: 250px;
+  /* height: 100%; */
+  /* width: 250px; */
   position: relative;
   display: flex;
   justify-content: center;
