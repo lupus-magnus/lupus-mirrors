@@ -1,29 +1,29 @@
-import React, { Component } from 'react';
-// import { motion } from 'framer-motion';
+import React from 'react';
+import { AnimatePresence } from 'framer-motion';
 import Home from './components/Home'
-import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import { Switch, Route, useLocation} from 'react-router-dom';
 import Facebook from './components/Facebook';
 import Instagram from './components/Instagram';
 import Netflix from './components/Netflix';
 
-class App extends Component {
-    
-    render() { 
+
+function App() {
+
+        const location = useLocation();
         return (
-            <Router>
-                <Switch>
+                
+            <AnimatePresence exitBeforeEnter>
+                <Switch location={location} key={location.key}>
+
                     <Route exact path='/' component={Home} />
                     <Route path='/facebook' component={Facebook} />
                     <Route path='/instagram' component={Instagram} />
                     <Route path='/netflix' component={Netflix} />
                     
                 </Switch>    
-                
-            </Router>
-            
+            </AnimatePresence>
+        
         )
         
-    }
 }
- 
 export default App;

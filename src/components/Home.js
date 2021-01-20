@@ -16,6 +16,7 @@ class Home extends Component {
                     animate={{x:0}}
                     initial={{x:'200vw'}}
                     transition={{ease: 'easeOut', duration: 1.3}}
+                    exit={{opacity: 0, transition: {duration: 1.3}}}
                 />
 
                 <motion.h1 className={style.title}
