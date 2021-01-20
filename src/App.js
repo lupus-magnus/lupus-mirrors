@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 // import { motion } from 'framer-motion';
-// import Remote from './components/remote'
 import Home from './components/Home'
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Facebook from './components/Facebook';
@@ -12,7 +11,6 @@ class App extends Component {
     render() { 
         return (
             <Router>
-                {/* <Remote /> */}
                 <Switch>
                     <Route exact path='/' component={Home} />
                     <Route path='/facebook' component={Facebook} />

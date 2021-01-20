@@ -58,3 +58,10 @@
     align-self: center;
   }
 }
+
+@media (max-width: 415px) {
+  .remoteControl {
+    /* position: relative !important; */
+    margin: auto;
+  }
+}
