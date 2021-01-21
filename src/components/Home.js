@@ -8,7 +8,11 @@ class Home extends Component {
     
     render() { 
         return (
-        <div className={style.main}>
+        <motion.div
+        animate={{opacity:1}}
+        initial={{opacity:0}}
+        transition={{ease: 'easeIn', duration:2}}
+        className={style.main}>
             
             <div className={style.imgContainer}>
                 <Remote />
@@ -34,7 +38,7 @@ class Home extends Component {
             </div>
             
             
-        </div>
+        </motion.div>
         );
     }
 }
