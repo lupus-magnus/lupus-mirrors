@@ -10,6 +10,7 @@ class Facebook extends Component {
     render() { 
         return (
             <motion.div 
+            style={{marginTop: '15%'}}
             initial={{opacity:0}}
             animate={{opacity:1}}
             transition={{duration:3}}

@@ -8,15 +8,14 @@ body {
 }
 
 .main {
-  width: 100vw;
+  /* width: 100vw; */
   height: 100vh;
   /* position: static; */
+  margin-top: 10vh;
   z-index: -1;
-  /* display: flex;
-  justify-content: center; */
   background-color: #58459e;
   padding: 3% 0;
-  margin: auto;
+  /* margin: auto; */
 }
 
 .imgContainer {
@@ -43,12 +42,12 @@ body {
   }
 } */
 .illustration {
-  height: 100%;
+  height: 400px;
+  width: auto;
   position: relative;
   width: 100%;
   z-index: 1;
   margin: auto;
-  flex-shrink: 1;
 }
 
 .title {

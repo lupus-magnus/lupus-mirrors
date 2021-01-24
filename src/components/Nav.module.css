@@ -1,0 +1,24 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  height: 10vh;
+  background-color: #473781;
+  color: white;
+  margin-bottom: 100px;
+  width: 100%;
+  z-index: 1000;
+}
+
+.switchContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  float: right;
+  height: 100%;
+  /* border: 1px solid black; */
+}
+
+.switch {
+  height: 90%;
+  margin: 0 10px;
+}

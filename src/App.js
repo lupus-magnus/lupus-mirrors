@@ -5,7 +5,7 @@ import { Switch, Route, useLocation} from 'react-router-dom';
 import Facebook from './components/Facebook';
 import Instagram from './components/Instagram';
 import Netflix from './components/Netflix';
-
+import Nav from './components/Nav'
 
 function App() {
 
@@ -13,8 +13,9 @@ function App() {
         return (
                 
             <AnimatePresence>  
+                <Nav />
                 <Switch location={location} key={location.key}>
-
+                    
                     <Route exact path='/' component={Home} />
                     <Route path='/facebook' component={Facebook} />
                     <Route path='/instagram' component={Instagram} />
