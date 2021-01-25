@@ -4,6 +4,8 @@ import switchOn from '../imgs/switchOn2.png';
 import switchOff from '../imgs/switchOff.png';
 import { motion } from 'framer-motion';
 
+const shadow = 'text-shadow: 0 0 10px #e6ae60;'
+
 class Nav extends Component {
     state = { displayRemote: this.props.display }
     
@@ -18,12 +20,17 @@ class Nav extends Component {
         return ( 
             <motion.div className={styles.navbar}
                 initial={{alpha: 1}}
-                animate={{opacity: 0.05}}
+                animate={{opacity: 0.3}}
                 transition={{delay: 0.5, duration: 1}}
-                whileHover={{opacity: 1, transition: {}}}
+                whileHover={{opacity: 1}}
             >
                 <div className={styles.switchContainer}>
-                    <p>Remote Control: {this.state.displayRemote ? 'ON' : 'OFF'}</p>
+                    <motion.p className={styles.status}
+                    animate={{
+                        scale: [1.1, 1, 1.1,1, 1.1, 1],
+                        textShadow: [{shadow}, 'none',{shadow}, 'none']
+                    }}
+                    >Remote Control: {this.state.displayRemote ? 'ON' : 'OFF'}</motion.p>
                     <img alt='switch' onClick={() => this.toggleDisplay()} className={styles.switch} src={this.state.displayRemote ? switchOn : switchOff }/>
                 </div>
             

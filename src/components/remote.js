@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 class Remote extends Component {
     render() { 
         return ( 
-            <motion.div className={styles.remoteControl} animate={{opacity: 1}} initial={{opacity: 0}} transition={{duration: 1.3}} exit={{opacity: 0, transition: {duration: 1.3}}}>
+            <motion.div className={styles.remoteControl} animate={{opacity: 1}} initial={{opacity: 0}} transition={{duration: 1.5}} exit={{opacity: 0, transition: {duration: 1.5}}}>
                 <div className={styles.remoteContainer}>
                 <Link to='/'><img className={styles.mirrorpng} src={mirrorImage} alt='mirror.png' /> </Link>
                     <div className={styles.options}>

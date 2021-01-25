@@ -9,7 +9,7 @@ import Nav from './components/Nav'
 import Remote from './components/remote'
 
 function App() {
-        const [displayRemote, setDisplayRemote] = useState(true)
+        const [displayRemote, setDisplayRemote] = useState(false)
         const location = useLocation();
         
         const toggleRemote = () => {
