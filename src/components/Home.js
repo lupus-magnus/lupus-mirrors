@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import style from './Home.module.css';
 import illustration from '../imgs/mirror-purple.png';
 import { motion } from 'framer-motion';
-import Remote from './remote'
+//import Remote from './remote'
 
 class Home extends Component {
     
@@ -15,7 +15,7 @@ class Home extends Component {
         className={style.main}>
             
             <div className={style.imgContainer}>
-                <Remote />
+                {/* <Remote /> */}
                 <motion.img className={style.illustration} alt='illustration' src={illustration}
                     animate={{x:0}}
                     initial={{x:'200vw'}}

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Remote from './remote';
+//import Remote from './remote';
 import { motion } from 'framer-motion';
 //import style from '/Facebook.module.css';
 import FacebookPage from './clones/facebook'
@@ -16,7 +16,7 @@ class Facebook extends Component {
             transition={{duration:3}}
             exit={{opacity: 0, transition: {duration: 1.3}}}>
                 
-                <Remote />
+                {/* <Remote /> */}
                 <FacebookPage />
             </motion.div>  
             );

@@ -22,4 +22,5 @@
 .switch {
   height: 90%;
   margin: 0 10px;
+  /* box-shadow: 0 0 8px rgb(255, 255, 255); */
 }
