@@ -19,10 +19,9 @@ class NetflixPage extends Component {
                 height: '115%',
                 backgroundImage: `url(${backgroundImage})`,
                 backgroundSize: 'cover',
-                marginBottom: '0',
-                
-                
+                marginBottom: '0'    
             }}
+            
             initial={{opacity:0}}
             animate={{opacity:1}}
             transition={{duration:3}}
