@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  z-index: 0;
+  padding: 0;
+}
+
+.netflixPage {
+  width: 100%;
+  height: 100%;
+  font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  position: absolute;
+}
+
+.blackDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  z-index: 3;
+}
+
+.main {
+  z-index: 3;
+  position: relative;
+}
+.logo {
+  display: block;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  background-color: #e50914;
+  text-decoration: none;
+
+  border-radius: 5px;
+  margin: 10px;
+  width: 78px;
+  height: 36px;
+}
+
+.convite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.125rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 1.625rem;
+  font-weight: 400;
+  text-emphasis: none;
+  text-decoration: none;
+}
+
+.inputField {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.register {
+  margin-right: 0;
+}
+
+.goBtn {
+  margin-left: 0;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 8px;
+  background-color: #e50914;
+  color: white;
+  text-decoration: none;
+}
