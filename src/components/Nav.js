@@ -10,15 +10,16 @@ class Nav extends Component {
     state = { displayRemote: this.props.display }
     
     toggleDisplay(){
-        this.setState({displayRemote: !this.state.displayRemote})
+        this.setState({displayRemote: !this.props.display})
         this.props.toggle();
     }
     
     render() { 
+        //this.setState({displayRemote: this.props.display})
         console.log('props:',this.props)
         console.log('state:',this.state)
         return ( 
-            <motion.div className={styles.navbar}
+            <motion.div onHoverStart={() => {this.setState({displayRemote: this.props.display})}} className={styles.navbar}
                 initial={{alpha: 1}}
                 animate={{opacity: 0.3}}
                 transition={{delay: 2.5, duration: 1}}
@@ -31,8 +32,8 @@ class Nav extends Component {
                         textShadow: '0 0 10px #e6ae60'
                     }}
                     transition={{delay: 1.5}}
-                    >Remote Control: {this.state.displayRemote ? 'ON' : 'OFF'}</motion.p>
-                    <img alt='switch' onClick={() => this.toggleDisplay()} className={styles.switch} src={this.state.displayRemote ? switchOn : switchOff }/>
+                    >Remote Control: {this.props.display ? 'ON' : 'OFF'}</motion.p>
+                    <img alt='switch' onClick={() => this.toggleDisplay()} className={styles.switch} src={this.props.display ? switchOn : switchOff }/>
                 </div>
             
             </motion.div>

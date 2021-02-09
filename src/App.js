@@ -18,12 +18,13 @@ function App() {
         return (
             <React.Fragment>
                 {/* <Nav key='navbar' toggle={toggleRemote} display={displayRemote} /> */}
+                <Route path='/' render={(props) => ( <Nav {...props} key='navbar' toggle={toggleRemote} display={displayRemote} />)} />
                 <AnimatePresence>  
                     {displayRemote && <Remote hideControl = {() => {
                         setDisplayRemote(false)
                         
                         }} />}
-                    <Route path='/' render={(props) => ( <Nav {...props} key='navbar' toggle={toggleRemote} display={displayRemote} />)} />
+                    
                     <Switch location={location} key={location.key}>
                         
                         
