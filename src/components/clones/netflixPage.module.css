@@ -110,7 +110,7 @@ h2 {
   align-self: center;
   align-items: center;
   padding-left: 3px;
-  transform: translateY(5px);
+  transform: translateY(6px);
 }
 
 @media (max-width: 500px) {
@@ -126,18 +126,22 @@ h2 {
     text-emphasis: none;
     text-decoration: none;
   }
-  .inputField {
-    transform: scale(0.95) translateX(-10%);
+
+  .goBtn {
+    transform: translateY(5px);
   }
-  .register {
+  /* .inputField {
+    transform: scale(0.95) translateX(-10%);
+  } */
+  /* .register {
     grid-column: 1;
     height: 100%;
     margin: 0;
-    padding: 0;
+    padding: 0; */
 
-    /* max-width: 70%; */
-  }
-  .goBtn {
+  /* max-width: 70%; */
+  /* } */
+  /* .goBtn {
     grid-column: 2;
     height: 42px !important;
     margin-left: -10%;
@@ -148,14 +152,15 @@ h2 {
     align-self: center;
     padding-left: 3px;
     border-radius: 3px;
-  }
+  } */
 }
 
 @media (max-width: 380px) {
   .inputField {
-    transform: scale(0.75) translateX(-20%);
+    transform: scale(0.75) translateX(-5%);
   }
   .goBtn {
-    border-radius: 3px;
+    /* border-radius: 3px; */
+    transform: translateY(6px);
   }
 }
