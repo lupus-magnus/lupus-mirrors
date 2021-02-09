@@ -11,7 +11,8 @@ class Home extends Component {
         <motion.div
         animate={{opacity:1}}
         initial={{opacity:0}}
-        transition={{ease: 'easeIn', duration:2}}
+        transition={{duration:3}}
+        exit={{opacity: 0, transition: {duration: 1.3}}}
         className={style.main}>
             
             <div className={style.imgContainer}>

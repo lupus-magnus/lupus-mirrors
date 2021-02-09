@@ -7,7 +7,10 @@ class Netflix extends Component {
     render() { 
         return ( 
         <motion.div
-            exit={{opacity: 0, transition: {duration: 1.3}}}
+        initial={{opacity:0}}
+        animate={{opacity:1}}
+        transition={{duration:3}}
+        exit={{opacity: 0, transition: {duration: 1.3}}}
         >
             <NetflixPage />
         </motion.div>);
