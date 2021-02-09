@@ -39,7 +39,7 @@ class NetflixPage extends Component {
                         <p>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
                         <div className={styles.inputField}>
                             <input height={inputFieldHeight} className={styles.register} placeholder='Email' type="text" />
-                            <a height={inputFieldHeight} href='/' className={styles.goBtn}>VAMOS LÁ {'>'} </a>
+                            <a height={inputFieldHeight} href='/' className={styles.goBtn}>VAMOS!</a>
                         </div>
                     </div>
                 </div>   

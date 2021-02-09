@@ -1,7 +1,6 @@
 body {
   background-color: #f0f2f5;
   font-family: Arial, Helvetica, sans-serif;
-
   height: 100%;
 }
 @media (max-width: 1000px) {
@@ -11,7 +10,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* width: 100%; */
+    padding-bottom: 10px;
+    max-width: 90vw;
   }
 
   .left {
@@ -26,7 +26,7 @@ body {
   .main {
     display: flex;
     height: 100%;
-
+    padding-bottom: 10px;
     align-items: center;
   }
 
@@ -41,7 +41,8 @@ body {
 }
 
 .main {
-  padding: 0 150px;
+  margin: 10px;
+  padding: 0px 100px 40px 100px;
 }
 
 .left {
@@ -57,6 +58,7 @@ body {
 
 .form_box {
   width: 396px;
+  max-width: 95vw;
   background-color: #fff;
   padding-bottom: 24px;
   padding-top: 20px;
@@ -83,11 +85,16 @@ input {
   border-radius: 6px;
 }
 
+.inputbox {
+  max-width: 85%;
+}
+
 .submit_btn {
   background-color: #1877f2;
   color: #fff;
   font-size: 20px;
   width: 332px;
+  max-width: 95%;
   padding: 5px 16px;
   border-radius: 6px;
   border: none;

@@ -15,11 +15,11 @@ class Remote extends Component {
                 <Link to='/'><img className={styles.mirrorpng} src={mirrorImage} alt='mirror.png' /> </Link>
                     <div className={styles.options}>
                         <Link to='/facebook'>
-                            <img className={styles.socialLinks} src={facebook} alt='social media link' />
+                            <img onClick={() => this.props.hideControl()} className={styles.socialLinks} src={facebook} alt='social media link' />
                         </Link>
                         
-                        <Link to='/instagram'><img className={styles.socialLinks} src={instagram} alt='social media link' /></Link>
-                        <Link to='/netflix'><img className={styles.socialLinks} src={netflix} alt='social media link' /></Link>
+                        <Link to='/instagram'><img onClick={() => this.props.hideControl()} className={styles.socialLinks} src={instagram} alt='social media link' /></Link>
+                        <Link to='/netflix'><img onClick={() => this.props.hideControl()} className={styles.socialLinks} src={netflix} alt='social media link' /></Link>
                     </div>
                 </div>    
             </motion.div>

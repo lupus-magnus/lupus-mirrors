@@ -4,7 +4,7 @@ import switchOn from '../imgs/switchOn2.png';
 import switchOff from '../imgs/switchOff.png';
 import { motion } from 'framer-motion';
 
-//const shadow = '0 0 10px #e6ae60;'
+
 
 class Nav extends Component {
     state = { displayRemote: this.props.display }

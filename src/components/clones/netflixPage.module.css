@@ -10,6 +10,7 @@ body {
   font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: white;
   position: absolute;
+  background-color: black;
 }
 
 .blackDiv {
@@ -77,21 +78,61 @@ h2 {
 }
 
 .inputField {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-}
-
-.register {
-  margin-right: 0;
+  display: grid;
+  grid-template-rows: 1rem;
+  grid-template-columns: 5fr auto;
+  height: 40px;
 }
 
 .goBtn {
-  margin-left: 0;
-  border-radius: 3px;
+  /* border-radius: 2px; */
   display: inline-block;
-  padding: 8px;
   background-color: #e50914;
   color: white;
   text-decoration: none;
+  grid-column: 2;
+  height: 42px !important;
+  margin-left: -10%;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  display: flex;
+  align-items: center;
+  padding-left: 3px;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2.125rem;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-emphasis: none;
+    text-decoration: none;
+  }
+  .inputField {
+    display: grid;
+    grid-template-rows: 1rem;
+    grid-template-columns: 5fr auto;
+    height: 40px;
+  }
+  .register {
+    grid-column: 1;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .goBtn {
+    grid-column: 2;
+    height: 42px !important;
+    margin-left: -10%;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    display: flex;
+    align-items: center;
+    padding-left: 3px;
+  }
 }
