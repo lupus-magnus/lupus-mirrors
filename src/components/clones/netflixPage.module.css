@@ -35,6 +35,8 @@ body {
 .main {
   z-index: 3;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .logo {
   display: block;
@@ -60,7 +62,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 11vh;
+  padding: 11vh 0;
   text-align: center;
 }
 
@@ -82,6 +84,8 @@ h2 {
   grid-template-rows: 1rem;
   grid-template-columns: 5fr auto;
   height: 40px;
+  align-self: center;
+  max-width: 95vw;
 }
 
 .goBtn {
@@ -118,12 +122,16 @@ h2 {
     grid-template-rows: 1rem;
     grid-template-columns: 5fr auto;
     height: 40px;
+    max-width: 80%;
+    margin: auto;
   }
   .register {
     grid-column: 1;
     height: 100%;
     margin: 0;
     padding: 0;
+
+    /* max-width: 70%; */
   }
   .goBtn {
     grid-column: 2;
