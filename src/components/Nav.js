@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import switchOn from '../imgs/switchOn2.png';
 import switchOff from '../imgs/switchOff.png';
 import { motion } from 'framer-motion';
-
+import logo from '../imgs/mirror_logo.png';
 
 
 class Nav extends Component {
@@ -25,6 +25,7 @@ class Nav extends Component {
                 transition={{delay: 2.5, duration: 1}}
                 whileHover={{opacity: 1}}
             >
+                <img style={{marginLeft: '20px'}} alt='logo' height={'75%'} src={logo} />
                 <div className={styles.switchContainer}>
                     <motion.p className={styles.status}
                     animate={{
