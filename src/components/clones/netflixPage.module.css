@@ -85,7 +85,7 @@ h2 {
   grid-template-columns: 5fr auto;
   height: 40px;
   align-self: center;
-  max-width: 95vw;
+  max-width: 80vw;
 }
 
 .goBtn {
@@ -122,8 +122,9 @@ h2 {
     grid-template-rows: 1rem;
     grid-template-columns: 5fr auto;
     height: 40px;
-    max-width: 80%;
+    max-width: 80vw;
     margin: auto;
+    transform: scale(0.85) translateX(-10%);
   }
   .register {
     grid-column: 1;
