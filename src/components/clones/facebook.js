@@ -19,7 +19,7 @@ class FacebookPage extends Component {
                             <input className={style.inputbox} type="text" placeholder="Email ou telefone" />
                             <input className={style.inputbox} type='password' placeholder="Senha" />
                             <br />
-                            <button className={style.submit_btn} type="submit">Entrar</button>
+                            <button className={style.submit_btn}>Entrar</button>
                             <a className={style.forgot_pwd} href='google.com'>Esqueceu a senha?</a>
                             <div className={style.line}></div>
                             <a className={style.new_acc} href='google.com'> Criar nova conta </a>
