@@ -15,10 +15,11 @@ function App() {
         const toggleRemote = () => {
             setDisplayRemote(!displayRemote)
         }
+        console.log('location: ', location.pathname)
         return (
             <React.Fragment>
                 {/* <Nav key='navbar' toggle={toggleRemote} display={displayRemote} /> */}
-                <Route path='/' render={(props) => ( <Nav {...props} key='navbar' toggle={toggleRemote} display={displayRemote} />)} />
+                <Route path='/' render={(props) => ( <Nav {...props} location={location.pathname} key='navbar' toggle={toggleRemote} display={displayRemote} />)} />
                 <AnimatePresence>  
                     {displayRemote && <Remote hideControl = {() => {
                         setDisplayRemote(false)

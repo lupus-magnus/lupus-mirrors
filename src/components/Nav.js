@@ -16,29 +16,53 @@ class Nav extends Component {
     
     render() { 
         //this.setState({displayRemote: this.props.display})
-        console.log('props:',this.props)
-        console.log('state:',this.state)
-        return ( 
-            <motion.div onHoverStart={() => {this.setState({displayRemote: this.props.display})}} className={styles.navbar}
-                initial={{alpha: 1}}
-                animate={{opacity: 0.3}}
-                transition={{delay: 2.5, duration: 1}}
-                whileHover={{opacity: 1}}
-            >
-                <img style={{marginLeft: '20px'}} alt='logo' height={'75%'} src={logo} />
-                <div className={styles.switchContainer}>
-                    <motion.p className={styles.status}
-                    animate={{
-                        scale: [1.1, 1, 1.1,1, 1.1, 1],
-                        textShadow: '0 0 10px #e6ae60'
-                    }}
-                    transition={{delay: 1.5}}
-                    >Remote Control: {this.props.display ? 'ON' : 'OFF'}</motion.p>
-                    <img alt='switch' onClick={() => this.toggleDisplay()} className={styles.switch} src={this.props.display ? switchOn : switchOff }/>
+        console.log('nav props:',this.props)
+        console.log('nav state:',this.state)
+        if(this.props.location !== "/") {
+            return ( 
+                
+                <motion.div onHoverStart={() => {this.setState({displayRemote: this.props.display})}} className={styles.navbar}
+                    initial={{alpha: 1}}
+                    animate={{opacity: 0.3}}
+                    transition={{delay: 2.5, duration: 1}}
+                    whileHover={{opacity: 1}}
+                >
+                    <img style={{marginLeft: '20px'}} alt='logo' height={'75%'} src={logo} />
+                    <div className={styles.switchContainer}>
+                        <motion.p className={styles.status}
+                        animate={{
+                            scale: [1, 1.2, 1, 1.2, 1, 1.2, 1],
+                            textShadow: '0 0 10px #e6ae60'
+                        
+                        }}
+                        transition={{delay: 1.5}}
+                        >Show mirrors?: {this.props.display ? 'Yes!' : 'Nah...'}</motion.p>
+                        <img alt='switch' onClick={() => this.toggleDisplay()} className={styles.switch} src={this.props.display ? switchOn : switchOff }/>
+                    </div>
+                
+                </motion.div>
+            );
+        }else{
+            return(
+                <div className={styles.navbar}>
+                    <img style={{marginLeft: '20px'}} alt='logo' height={'75%'} src={logo} />
+                    <div className={styles.switchContainer}>
+                        <motion.p className={styles.status}
+                        animate={{
+                            scale: [1, 1.5, 1, 1.8, 1],
+                            textShadow: '0 0 10px #e6ae60',
+                            rotateZ: [0, 0, 0, 0, 360],
+                            color: ['#fff', '#e6ae60', '#fff', '#e6ae60','#fff']
+                            
+                        }}
+                        transition={{delay: 2, duration: 1.3}}
+                        >Show mirrors?: {this.props.display ? 'Yes!' : 'Nah...'}</motion.p>
+                        <img alt='switch' onClick={() => this.toggleDisplay()} className={styles.switch} src={this.props.display ? switchOn : switchOff }/>
+                    </div>
+                
                 </div>
-            
-            </motion.div>
-         );
+            )
+        }
     }
 }
  
