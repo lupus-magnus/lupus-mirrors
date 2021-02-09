@@ -1,16 +1,17 @@
-body {
+/* body {
   margin: 0;
   z-index: 0;
   padding: 0;
-}
+} */
 
 .netflixPage {
-  width: 100%;
+  max-width: 99vw;
   height: 100%;
   font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: white;
   position: absolute;
   background-color: black;
+  overflow-x: hidden;
 }
 
 .blackDiv {
