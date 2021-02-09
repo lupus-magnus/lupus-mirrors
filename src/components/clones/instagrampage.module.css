@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fafafa;
+  overflow-x: hidden;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  margin-top: 15vh;
+}
+/*Seção da esquerda:*/
+
+/*Seção da direita:*/
+.formBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  margin-bottom: 15px;
+}
+.signup {
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.divisor {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.line {
+  display: flex;
+  text-align: center;
+  border-bottom: 1px solid #dbdbdb;
+  width: 40%;
+}
+
+.ou {
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 600;
+  color: #958e8e;
+}
+
+input,
+.login {
+  margin-bottom: 10px;
+  width: 90%;
+}
+
+.login {
+  width: 268px;
+  padding: 10px 0;
+  background-color: #b2dffc;
+  color: white;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 3px;
+}
+
+a {
+  text-decoration: none;
+  color: #385185;
+  margin-top: 15px;
+}
+
+@media (max-width: 1000px) {
+  .phones {
+    display: none;
+  }
+}
